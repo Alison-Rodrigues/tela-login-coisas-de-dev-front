@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: "Roboto Mono", monospace;
+    color: #FFF;
+}
+body {
+    background: linear-gradient(to right top, #180655, #140750, #11084c, #0e0847, #0c0842, #031244, #001844, #001e44, #002b46, #0f3545, #283e43, #3f4646);
+    min-height: 100vh;
+    display: flex;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+}
+main {
+    position: relative;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .redesocial a svg {
+    width: 30px;
+}
+
+main .redesocial a {
+    text-decoration: none;
+    margin-left: 30px;
+}
+main .redesocial a:first-child {
+    margin-left: 0;
+}
+main .redesocial {
+    display: flex;
+    align-content: center;
+    margin-bottom: 20px;
+}
+h1 {
+    margin-bottom: 60px;
+    font-size: 4em;
+    background: linear-gradient(to right, #00D8AE, #F9F871);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+form .input-user {
+    margin-top: 40px;
+}
+form .input-user input {
+    border: 0;
+    background: none;
+    outline: none;
+    font-size: 1em;
+}
+form .input-user .label-user {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: .3s;
+    pointer-events: none;
+}
+.input-user {
+    position: relative;
+}
+form .input-user input:focus ~ .label-user,
+form .input-user input:not(:placeholder-shown) ~ .label-user {
+    top: -20px;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #00F5FF;
+}
+main form input[type="submit"] {
+    background: none;
+    padding: 15px;
+    font-size: 1em;
+    background: #00D5FF;
+    border-radius: 32px;
+    cursor: pointer;
+    transition-duration: .1s;
+}
+form .botao { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    flex-direction: column;
+    
+}
+section img {
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+}
+main form input[type="submit"]:hover {
+    background: #28B0FF;
+    transform: scale(1.1);
+}
+main form .input-user .line::before {
+    content: " ";
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    background: #FFF;
+    bottom: -5px;
+    left: 0;
+    
+}
+main form .input-user .line::after {
+    content: " ";
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    background: #00F5FF;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .3s ease;
+}
+main form .input-user input:focus ~ .line::after {
+    transform: scaleX(100%);
+    height: 2px;
+}
+main span {
+    font-size: 0.9em;
+    opacity: 70%;
+}
+main form svg {
+    width: 18px;
+    margin-right: 5px;
+}
+section h5 {
+    width: 70%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.9em;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 8px;
+    border-radius: 25px 1px;
+}
+
+@media screen and (max-width: 1040px) {
+    .image {
+        display: none;
+    }
+}
+
